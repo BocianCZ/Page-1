@@ -1,5 +1,5 @@
 {
-  "name": "idavoll/page-module",
+  "name": "bociancz/page-module",
   "type": "asgard-module",
   "description": "Page module for AsgardCMS. Page management.",
   "keywords": [
@@ -12,6 +12,11 @@
       "name": "Nicolas Widart",
       "email": "info@asgardcms.com",
       "role": "Developer"
+    },
+    {
+      "name": "Bocian.CZ",
+      "email": "info@bocian.cz",
+      "role": "developer"
     }
   ],
   "support": {
