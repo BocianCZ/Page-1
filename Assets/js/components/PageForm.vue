@@ -257,7 +257,10 @@
             this.fetchTemplates();
 
             if (this.$route.params.pageId !== undefined) {
-                this.fetchPage();
+                this.loading = true;
+                setTimeout(() => {
+                    this.fetchPage();
+                }, 500);
             }
         },
         destroyed() {
