@@ -79,6 +79,13 @@
                                     <template slot-scope="scope">
                                         <el-button-group>
                                             <edit-button :to="{name: 'admin.page.page.edit', params: {pageId: scope.row.id}}"></edit-button>
+                                            <a
+                                                    class="el-button el-button--default el-button--mini"
+                                                    :href="'/backend/bocian/universal-blocks/' + scope.row.id + encodeURI('/Modules\\Page\\Entities\\Page')"
+                                                    title="Bloky"
+                                            >
+                                                <i class="fa fa-file-text-o"></i>
+                                            </a>
                                             <delete-button :scope="scope" :rows="data"></delete-button>
                                         </el-button-group>
                                     </template>
@@ -118,7 +125,7 @@
                 data,
                 meta: {
                     current_page: 1,
-                    per_page: 10,
+                    per_page: 100,
                 },
                 order_meta: {
                     order_by: '',
